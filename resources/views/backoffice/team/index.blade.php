@@ -20,7 +20,7 @@
                                     <th scope="col">Github</th>
                                     <th scope="col">Facebook</th>
                                     <th scope="col">Gmail</th>
-                                    <th scope="col">Insagram</th>
+                                    <th scope="col">Instagram</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -29,14 +29,14 @@
                                 @foreach ($team as $item)
                                     <tr>
                                         <th scope="row">{{ $no++ }}</th>
-                                        <td>{{ $item->image }}</td>
+                                        <td><img src="{{ $item->image }}" alt="" width="120px"></td>
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->github }}</td>
                                         <td>{{ $item->facebook }}</td>
                                         <td>{{ $item->gmail }}</td>
                                         <td>{{ $item->instagram }}</td>
                                         <td>
-                                            <a href="{{ route('team.show', $item->id) }}" class="btn btn-success">Edit</a>
+                                            <a href="{{ route('team.edit', $item->id) }}" class="btn btn-success">Edit</a>
                                             <form action="{{ route('team.destroy', $item->id) }}" method="POST"
                                                 class="inline-block">
                                                 {!! method_field('delete') . csrf_field() !!}

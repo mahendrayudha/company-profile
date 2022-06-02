@@ -10,5 +10,5 @@ class Team extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $guarded = ['id'];
+    protected $fillable = ['name', 'image', 'github', 'facebook', 'gmail', 'instagram'];
 }
