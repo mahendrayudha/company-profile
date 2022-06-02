@@ -38,17 +38,21 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="{{ route('category.index') }}">Category
+                                    <a class="nav-link {{ Request::is('category') ? 'active' : '' }}"
+                                        href="{{ route('category.index') }}">Category
                                         Product</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('product.index') }}">Product</a>
+                                    <a class="nav-link  {{ Request::is('product') ? 'active' : '' }}"
+                                        href="{{ route('product.index') }}">Product</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Team</a>
+                                    <a class="nav-link  {{ Request::is('team') ? 'active' : '' }}"
+                                        href="{{ route('team.index') }}">Team</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('contact.index') }}">Contact</a>
+                                    <a class="nav-link  {{ Request::is('contact') ? 'active' : '' }}"
+                                        href="{{ route('contact.index') }}">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -85,7 +89,7 @@
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
-                                                                                                                                     document.getElementById('logout-form').submit();">
+                                                                                                                                                 document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
