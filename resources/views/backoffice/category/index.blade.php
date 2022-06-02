@@ -21,11 +21,16 @@
                                 @foreach ($category as $item)
                                     <tr>
                                         <th scope="row">{{ $no++ }}</th>
-                                        <td>{{ $item['name'] }}</td>
+                                        <td>{{ $item->name }}</td>
                                         <td>
                                             <a href="" class="btn btn-success">Edit</a>
-                                            <a href="" class="btn btn-danger">Delete</a>
-
+                                            <form action="{{ route('category.destroy', $item->id) }}" method="POST"
+                                                class="inline-block">
+                                                {!! method_field('delete') . csrf_field() !!}
+                                                <button type="submit" class="btn btn-danger">
+                                                    Delete
+                                                </button>
+                                            </form>
                                         </td>
 
                                     </tr>

@@ -34,24 +34,26 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    @auth
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{{ route('category.index') }}">Category
+                                        Product</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    @endauth
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{ route('category.index') }}">Category
-                                    Product</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
                 </nav>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
@@ -83,7 +85,7 @@
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
-                                                                                                             document.getElementById('logout-form').submit();">
+                                                                                                                 document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 

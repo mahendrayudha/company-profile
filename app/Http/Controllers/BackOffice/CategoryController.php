@@ -5,6 +5,7 @@ namespace App\Http\Controllers\BackOffice;
 use App\Http\Controllers\Controller;
 use App\Models\CategoryProduct;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -38,7 +39,7 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        // echo json_encode($data);
+        $data['slug'] = Str::slug($request->name);
         CategoryProduct::create($data);
         return redirect('/category');
     }
@@ -85,6 +86,6 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        echo json_encode($id);
     }
 }
