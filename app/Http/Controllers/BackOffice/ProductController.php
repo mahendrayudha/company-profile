@@ -17,7 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $data['product'] = Product::latest()->get();
+        $data['product'] = Product::with(['category'])->latest()->get();
         return view('backoffice.product.index', $data);
     }
 

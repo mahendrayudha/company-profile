@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BackOffice\CategoryController;
+use App\Http\Controllers\BackOffice\ContactController;
 use App\Http\Controllers\BackOffice\ProductController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LandingPageController;
@@ -24,4 +25,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::resource('category', CategoryController::class);
     Route::resource('product', ProductController::class);
+    Route::resource('contact', ContactController::class);
 });

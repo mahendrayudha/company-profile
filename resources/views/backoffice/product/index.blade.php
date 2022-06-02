@@ -18,6 +18,7 @@
                                     <th scope="col">Name Product</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Url</th>
+                                    <th scope="col">Category ID</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -29,6 +30,7 @@
                                         <td>{{ $item->name_product }}</td>
                                         <td>{{ number_format($item->price) }}</td>
                                         <td>{{ $item->url }}</td>
+                                        <td>{{ $item->category->name ?? '---' }}</td>
                                         <td>
                                             <a href="{{ route('product.show', $item->id) }}"
                                                 class="btn btn-success">Edit</a>
