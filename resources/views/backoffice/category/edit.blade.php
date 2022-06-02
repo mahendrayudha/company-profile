@@ -24,12 +24,14 @@
                     <div class="card-header">{{ __('Category') }}</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('category.store') }}">
+                        <form method="POST" action="{{ route('category.update', $category->id) }}">
+                            @method('put')
                             @csrf
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Name Category</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter Category" name="name">
+                                    aria-describedby="emailHelp" placeholder="Enter Category" name="name"
+                                    value="{{ $category->name }}">
                             </div>
                             <button type="submit" class="btn btn-primary mt-3">Submit</button>
                         </form>

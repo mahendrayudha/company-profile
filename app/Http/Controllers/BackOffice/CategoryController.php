@@ -41,7 +41,7 @@ class CategoryController extends Controller
         $data = $request->all();
         $data['slug'] = Str::slug($request->name);
         CategoryProduct::create($data);
-        return redirect('/category');
+        return redirect()->route('category.index')->with('success', 'New category has been added.');
     }
 
     /**
@@ -52,7 +52,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $data['category'] = CategoryProduct::find($id);
+        return view('backoffice.category.edit', $data);
     }
 
     /**
@@ -63,7 +64,6 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
     }
 
     /**
@@ -73,9 +73,21 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, CategoryProduct $category)
     {
-        //
+        $rules = [
+            'name' => 'required|max:255',
+        ];
+
+        if ($request->slug != $category->slug) {
+            $rules['slug'] = 'unique:category_products';
+        }
+        $validatedData = $request->validate($rules);
+        $validatedData['slug'] = Str::slug($request->name);
+
+        CategoryProduct::where('id', $category->id)
+            ->update($validatedData);
+        return redirect()->route('category.index')->with('success', 'Category updated succesfully.');
     }
 
     /**
@@ -84,8 +96,9 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(CategoryProduct $category)
     {
-        echo json_encode($id);
+        $category->delete();
+        return redirect()->route('category.index')->with('success', 'Category success delete');
     }
 }
