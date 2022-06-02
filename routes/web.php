@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BackOffice\CategoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,13 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LandingPageController::class, 'index'])->name('landingpage');
 
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
-
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::resource('category', CategoryController::class);
 });
