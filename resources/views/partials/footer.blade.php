@@ -3,13 +3,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3>BizLand<span>.</span></h3>
+                    <h3>Contact Us<span>.</span></h3>
                     <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
+                        Jl. Argopuro No.1, Krajan, <br>
+                        Arjasa, Kabupaten Jember, <br>
+                        Jawa Timur, 68191 <br><br>
+                        <strong>Phone:</strong> +62 8523 5521 225<br>
+                        <strong>Email:</strong> millabonsai@gmail.com<br>
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-links">

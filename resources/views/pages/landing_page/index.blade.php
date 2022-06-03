@@ -400,21 +400,21 @@
                     <div class="info-box mb-4">
                         <i class="bx bx-map"></i>
                         <h3>Our Address</h3>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <p src="">Jl. Argopuro No.1, Krajan, Arjasa, Kabupaten Jember, Jawa Timur 68191</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box  mb-4">
                         <i class="bx bx-envelope"></i>
                         <h3>Email Us</h3>
-                        <p>contact@example.com</p>
+                        <p>millabonsai@gmail.com</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box  mb-4">
                         <i class="bx bx-phone-call"></i>
                         <h3>Call Us</h3>
-                        <p>+1 5589 55488 55</p>
+                        <p>+62 8523 5521 225</p>
                     </div>
                 </div>
             </div>
