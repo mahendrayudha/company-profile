@@ -106,22 +106,34 @@
         <div class="container" data-aos="zoom-in">
             <div class="row">
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('landingpage/img/clients/client-1.png') }}" class="img-fluid" alt="">
+                    <a href="{{ 'https://api.whatsapp.com/send/?phone=' . $contacts->phone_number }}">
+                        <img src="{{ asset('landingpage/img/social_media/whatsapp.png') }}" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('landingpage/img/clients/client-2.png') }}" class="img-fluid" alt="">
+                    <a href="{{ $contacts->facebook }}">
+                        <img src="{{ asset('landingpage/img/social_media/facebook.png') }}" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('landingpage/img/clients/client-3.png') }}" class="img-fluid" alt="">
+                    <a href="{{ $contacts->instagram }}">
+                        <img src="{{ asset('landingpage/img/social_media/instagram.png') }}" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('landingpage/img/clients/client-4.png') }}" class="img-fluid" alt="">
+                    <a href="{{ 'mailto:' . $contacts->email }}">
+                        <img src="{{ asset('landingpage/img/social_media/gmail.png') }}" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('landingpage/img/clients/client-5.png') }}" class="img-fluid" alt="">
+                    <a href="{{ $contacts->url }}">
+                        <img src="{{ asset('landingpage/img/social_media/shopee.png') }}" class="img-fluid" alt="">
+                    </a>
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('landingpage/img/clients/client-6.png') }}" class="img-fluid" alt="">
+                    <a href="{{ $contacts->web }}">
+                        <img src="{{ asset('landingpage/img/logo/logo.png') }}" class="img-fluid" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -390,8 +402,7 @@
     <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>Contact</h2>
-                <h3><span>Contact Us</span></h3>
+                <h3><span>Kontak kami</span></h3>
                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
                     vitae autem.</p>
             </div>
@@ -399,58 +410,61 @@
                 <div class="col-lg-6">
                     <div class="info-box mb-4">
                         <i class="bx bx-map"></i>
-                        <h3>Our Address</h3>
-                        <p src="">Jl. Argopuro No.1, Krajan, Arjasa, Kabupaten Jember, Jawa Timur 68191</p>
+                        <h3>Alamat Kami</h3>
+                        <p>{{ $contacts->address }}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="info-box  mb-4">
+                    <div class="info-box mb-4">
                         <i class="bx bx-envelope"></i>
-                        <h3>Email Us</h3>
-                        <p>millabonsai@gmail.com</p>
+                        <h3>Email</h3>
+                        <p>{{ $contacts->email }}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="info-box  mb-4">
-                        <i class="bx bx-phone-call"></i>
-                        <h3>Call Us</h3>
-                        <p>+62 8523 5521 225</p>
+                    <div class="info-box mb-4">
+                        <i class="bx bi-whatsapp"></i>
+                        <h3>Whatsapp</h3>
+                        <p>{{ $contacts->phone_number }}</p>
                     </div>
                 </div>
             </div>
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-6 ">
                     <iframe class="mb-4 mb-lg-0"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                        frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15799.569099918574!2d113.7512654!3d-8.1124503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39c4347e7ac9addf!2sToko%20Mila%20Bonsai!5e0!3m2!1sid!2sid!4v1654359408462!5m2!1sid!2sid"
+                        frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="col-lg-6">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                    required>
-                            </div>
-                            <div class="col form-group">
-                                <input type="email" class="form-control" name="email" id="email"
-                                    placeholder="Your Email" required>
-                            </div>
+                <div class="row col-lg-6 p-0 m-0">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="info-box mb-4">
+                            <i class="bx bi-instagram"></i>
+                            <h3>Instagram</h3>
+                            <p>{{ $contacts->instagram }}</p>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="info-box mb-4">
+                            <i class="bx bi-facebook"></i>
+                            <h3>Facebook</h3>
+                            <p>{{ $contacts->facebook }}</p>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="info-box mb-4">
+                            <i class="bx bi-cart"></i>
+                            <h3>Shopee</h3>
+                            <p>{{ $contacts->url }}</p>
                         </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="info-box mb-4">
+                            <i class="bx bi-globe"></i>
+                            <h3>Web Katalog</h3>
+                            <p>{{ $contacts->web }}</p>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
