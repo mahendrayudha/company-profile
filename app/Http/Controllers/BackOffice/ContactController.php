@@ -75,8 +75,10 @@ class ContactController extends Controller
             'address' => $request->address,
             'email' => $request->email,
             'phone_number' => $request->phone_number,
+            'facebook' => $request->facebook,
             'instagram' => $request->instagram,
             'url' => $request->url,
+            'web' => $request->web,
         ];
         Contact::where('id', $contact->id)
             ->update($data);

@@ -18,8 +18,10 @@ class ContactSeeder extends Seeder
             'address' => 'Jl. Arjasa',
             'phone_number' => '089271623',
             'email' => 'milla@gmail.com',
+            'facebook' => 'milla@gmail.com',
             'instagram' => 'milla@gmail.com',
             'url' => 'milla@gmail.com',
+            'web' => 'milla@gmail.com',
         ]);
     }
 }

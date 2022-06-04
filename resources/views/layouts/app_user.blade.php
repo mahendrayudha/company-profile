@@ -7,8 +7,8 @@
     <title>Company Profile</title>
 
     {{-- Favicon --}}
-    <link rel="apple-touch-icon" href="">
-    <link rel="shortcut icon" type="image/x-iocn" href="">
+    <link rel="apple-touch-icon" href="{{ asset('landingpage/img/logo/icon_white.png') }}">
+    <link rel="shortcut icon" type="image/x-iocn" href="{{ asset('landingpage/img/logo/icon_white.png') }}">
 
     @stack('before-style')
     {{-- style --}}
