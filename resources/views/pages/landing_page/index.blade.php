@@ -14,56 +14,16 @@
 </section>
 
 <main id="main">
-    <section id="featured-services" class="featured-services">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4 class="title"><a href="">Magni Dolores</a></h4>
-                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="about" class="about section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>About</h2>
-                <h3>Find Out More <span>About Us</span></h3>
+                <h3>Cari tahu selengkapnya <span>tentang kami</span></h3>
                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
                     vitae autem.</p>
             </div>
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                    <img src="{{ asset('landingpage/img/about.jpg') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('landingpage/img/picture.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
                     data-aos-delay="100">
@@ -139,68 +99,10 @@
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title">
-                <h2>Services</h2>
-                <h3>Check our <span>Services</span></h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                    data-aos-delay="200">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4><a href="">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-                    data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4><a href="">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4><a href="">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-slideshow"></i></div>
-                        <h4><a href="">Dele cardo</a></h4>
-                        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-arch"></i></div>
-                        <h4><a href="">Divera don</a></h4>
-                        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="product" class="product">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>product</h2>
-                <h3>Check our <span>product</span></h3>
+                <h3>Kami menyediakan berbagai <span>tanaman hias</span></h3>
                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
                     vitae autem.</p>
             </div>
@@ -208,112 +110,27 @@
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="product-flters">
                         <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
+                        @foreach ($categories as $category)
+                        <li data-filter="{{ '.filter-' . $category->name }}">{{ $category->name }}</li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
             <div class="row product-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-4 col-md-6 product-item filter-app">
-                    <img src="assets/img/product/product-1.jpg" class="img-fluid" alt="">
+                @foreach ($products as $product)
+                <div class="col-lg-4 col-md-6 product-item {{ 'filter-' . $product->category->name }}">
+                    <img src="{{ asset($product->image) }}" class="img-fluid" alt="">
                     <div class="product-info">
-                        <h4>App 1</h4>
-                        <p>App</p>
-                        <a href="assets/img/product/product-1.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                        <h4>{{ $product->name_product }}</h4>
+                        <p>{{ $product->category->name }}</p>
+                        <a href="{{ $product->image }}" data-gallery="productGallery"
+                            class="product-lightbox preview-link" title="{{ $product->name_product }}"><i
+                                class="bx bx-plus"></i></a>
                         <a href="product-details.html" class="details-link" title="More Details"><i
                                 class="bx bx-link"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 product-item filter-web">
-                    <img src="assets/img/product/product-2.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="assets/img/product/product-2.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 product-item filter-app">
-                    <img src="assets/img/product/product-3.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>App 2</h4>
-                        <p>App</p>
-                        <a href="assets/img/product/product-3.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 product-item filter-card">
-                    <img src="assets/img/product/product-4.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Card 2</h4>
-                        <p>Card</p>
-                        <a href="assets/img/product/product-4.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 product-item filter-web">
-                    <img src="assets/img/product/product-5.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Web 2</h4>
-                        <p>Web</p>
-                        <a href="assets/img/product/product-5.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 product-item filter-app">
-                    <img src="assets/img/product/product-6.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>App 3</h4>
-                        <p>App</p>
-                        <a href="assets/img/product/product-6.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 product-item filter-card">
-                    <img src="assets/img/product/product-7.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Card 1</h4>
-                        <p>Card</p>
-                        <a href="assets/img/product/product-7.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 product-item filter-card">
-                    <img src="assets/img/product/product-8.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Card 3</h4>
-                        <p>Card</p>
-                        <a href="assets/img/product/product-8.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 product-item filter-web">
-                    <img src="assets/img/product/product-9.jpg" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Web 3</h4>
-                        <p>Web</p>
-                        <a href="assets/img/product/product-9.jpg" data-gallery="productGallery"
-                            class="product-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                        <a href="product-details.html" class="details-link" title="More Details"><i
-                                class="bx bx-link"></i></a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -321,80 +138,30 @@
     <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>Team</h2>
-                <h3>Our Hardworking <span>Team</span></h3>
+                <h3><span>Tim pengembang</span> kami</h3>
                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
                     vitae autem.</p>
             </div>
             <div class="row">
+                @foreach ($teams as $team)
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                     <div class="member">
                         <div class="member-img">
-                            <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset($team->image) }}" class="img-fluid" alt="">
                             <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
+                                <a href="{{ $team->github }}"><i class="bi bi-github"></i></a>
+                                <a href="{{ $team->facebook }}"><i class="bi bi-facebook"></i></a>
+                                <a href="mailto:{{ $team->gmail }}"><i class="bi bi-envelope"></i></a>
+                                <a href="{{ $team->instagram }}"><i class="bi bi-instagram"></i></a>
                             </div>
                         </div>
                         <div class="member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span>
+                            <h4>{{ $team->name }}</h4>
+                            <span>{{ $team->gmail }}</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                    <div class="member">
-                        <div class="member-img">
-                            <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="member-info">
-                            <h4>Amanda Jepson</h4>
-                            <span>Accountant</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
