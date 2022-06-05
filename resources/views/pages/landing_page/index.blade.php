@@ -18,8 +18,7 @@
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h3>Cari tahu selengkapnya <span>tentang kami</span></h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
+                <p>Selengkapnya tentang kami Milla Bonsai & Nursery</p>
             </div>
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
@@ -27,35 +26,28 @@
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up"
                     data-aos-delay="100">
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                    <h3>Selamat datang di Milla Bonsai & Nursery</h3>
                     <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna aliqua.
+                        Kami menyediakan berbagai macam tanaman hias dan kaktus dari kebun sendiri. 
                     </p>
                     <ul>
                         <li>
                             <i class="bx bx-store-alt"></i>
                             <div>
-                                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                                <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                                <h5>Menjual di berbagai platform</h5>
+                                <p>Kami menjual berbagai macam tanaman hias dan kaktus dari kebun sendiri di berbagai platform online shop dan kami memiliki website katalog tanaman hias sendiri</p>
                             </div>
                         </li>
                         <li>
                             <i class="bx bx-images"></i>
                             <div>
-                                <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                                <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata
-                                    redi</p>
+                                <h5>Menyediakan berbagai jenis tanaman hias</h5>
+                                <p>Kami menyediakan berbagai jenis tanaman hias seperti Adenium, Aglonema, Alokasia, Anthurium, Begonia, Bonsai, Bougenville, Caladium, Calathea, Kadaka, Kaktus, Monstera, Peperomia, Philodendron, Sansivera, Spatuphilum, Sukulen, Syngonium, Tilandsia dan lain - lain</p>
                             </div>
                         </li>
                     </ul>
                     <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum
+                        Milla Bonsai & Nursery memiliki banyak jenis tanaman hias dan kaktus dengan harga yang beraneka ragam, Milla Bonsai & Nursery buka tiap hari dari pukul 07.30 - 21.00 WIB dan pada hari minggu pukul 07.00 - 19.30 WIB. Kami dapat melakukan pengiriman tanaman setiap hari pada jam kerja. Happy Gardening!
                     </p>
                 </div>
             </div>
@@ -103,8 +95,7 @@
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h3>Kami menyediakan berbagai <span>tanaman hias</span></h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
+                <p>Menyediakan berbagai jenis tanaman hias dan kaktus dari kebun sendiri</p>
             </div>
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-12 d-flex justify-content-center">
@@ -139,8 +130,7 @@
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h3><span>Tim pengembang</span> kami</h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
+                <p>Selengkapnya tentang tim pengembang kami</p>
             </div>
             <div class="row">
                 @foreach ($teams as $team)
@@ -170,8 +160,7 @@
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h3><span>Kontak kami</span></h3>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
+                <p>Selengkapnya tentang kontak kami</p>
             </div>
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-6">
